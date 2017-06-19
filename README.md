@@ -20,8 +20,8 @@ After you copy the file, restart Kibana.
 If the plug-in is installed correctly, the Save button will appear at the top of the Discover screen.
 
 When you click the Save button, a screen showing the progress of CSV Export appears.
-However, considering the performance of ElasticSearch server, only up to 500,000 files will be exported.
-If more than 500,000 pieces of data are found, a message will be displayed.
+However, considering the performance of ElasticSearch server, only up to 500,000 rows will be exported.
+If more than 500,000 rows of data are found, a message will be displayed.
 
 ---
 ---
