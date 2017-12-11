@@ -50,7 +50,7 @@ module.exports = function (kibana) {
             if (isObject) val = val.valueOf();
             val = String(val);
             if (quoteValues && nonAlphaNumRE.test(val)) {
-                val = '"' + val.replace(allDoubleQuoteRE, '""') + '"';
+                val = '"' + val.replace('\\', '\\\\').replace(allDoubleQuoteRE, '""') + '"';
             }
             return val;
         }
