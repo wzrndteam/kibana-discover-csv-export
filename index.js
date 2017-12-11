@@ -42,7 +42,7 @@ module.exports = function (kibana) {
         let nonAlphaNumRE = /[^a-zA-Z0-9]/;
         let allDoubleQuoteRE = /"/g;
         let separator = ',';
-        let quoteValues = undefined;
+        let quoteValues = true;
 
         function escape(val) {
             var type = typeof val;
