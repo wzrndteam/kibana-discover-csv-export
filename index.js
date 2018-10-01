@@ -33,7 +33,8 @@ module.exports = function (kibana) {
         for (var item_key in hits) {
             let item = hits[item_key];
             let row = [];
-            for (var key in item._source) {
+            for (var idx in columns) {
+                let key = columns[idx];
                 row.push(item._source[key]);
             }
             rows.push(row);
